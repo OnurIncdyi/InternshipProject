@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fced4fd3-c93e-49bf-bc04-9412bce2c5e2" name="Changes" comment="Framework Create">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_05_HR.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_05_HR.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +36,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\test\java\FeatureFiles" />
@@ -50,6 +46,7 @@
       <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="StepDefinitions" />
       <recent name="Utilities" />
     </key>
   </component>
@@ -82,6 +79,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Cucumber Java.Feature: _01_Login" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -130,7 +129,6 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="PG16-7" />
                       </list>
                     </value>
                   </entry>
@@ -145,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Framework Create" />
-    <option name="LAST_COMMIT_MESSAGE" value="Framework Create" />
+    <MESSAGE value="Framework Create Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework Create Done" />
   </component>
 </project>
