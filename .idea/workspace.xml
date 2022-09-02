@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fced4fd3-c93e-49bf-bc04-9412bce2c5e2" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Utilities/GWD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/ExtendReportSet.xml" afterDir="false" />
+    <list default="true" id="fced4fd3-c93e-49bf-bc04-9412bce2c5e2" name="Changes" comment="Framework Create">
+      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_Login.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DialogContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/FormContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/LeftNav.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/Parent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_01_LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,18 +48,26 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/onuri/IdeaProjects/InternshipProject/src/test/resources",
+    "last_opened_file_path": "C:/Users/onuri/IdeaProjects/InternshipProject/src/test/java/FeatureFiles",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\test\java\FeatureFiles" />
+      <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\test\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\test\java\StepDefinitions" />
       <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\main" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Utilities" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cucumber Java.Feature: _01_Login">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="InternshipProject" />
@@ -64,8 +75,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: _01_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/FeatureFiles/_01_Login.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="InternshipProject" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: _01_Login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Feature: _01_Login" />
         <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
@@ -86,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662112696747</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Framework Create">
+      <created>1662137705158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662137705158</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -102,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Framework Create" />
+    <option name="LAST_COMMIT_MESSAGE" value="Framework Create" />
   </component>
 </project>
