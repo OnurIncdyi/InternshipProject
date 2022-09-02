@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fced4fd3-c93e-49bf-bc04-9412bce2c5e2" name="Changes" comment="Framework Create">
-      <change afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/PG16-4.feature" afterDir="false" />
+    <list default="true" id="fced4fd3-c93e-49bf-bc04-9412bce2c5e2" name="Changes" comment="PG16-4 Branch Created">
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/_PG16_4_.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,13 +27,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="Master" />
-      </list>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,6 +81,9 @@
       <list>
         <item itemvalue="Cucumber Java.Feature: _01_Login" />
         <item itemvalue="Application.Test" />
+        <item itemvalue="Cucumber Java.Feature: _01_Login" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Cucumber Java.Feature: _01_Login" />
       </list>
     </recent_temporary>
   </component>
