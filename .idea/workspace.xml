@@ -4,8 +4,6 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fced4fd3-c93e-49bf-bc04-9412bce2c5e2" name="Changes" comment="Framework Create Done">
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FeatureFiles/_05_HR.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FeatureFiles/_05_HR.feature" afterDir="false" />
     </list>
@@ -38,16 +36,6 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/onuri/IdeaProjects/InternshipProject/src/test/java/FeatureFiles&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-  }
-}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\onuri\IdeaProjects\InternshipProject\src\test\java\FeatureFiles" />
@@ -62,7 +50,7 @@
       <recent name="Utilities" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Feature: _01_Login">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="InternshipProject" />
@@ -91,7 +79,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: _01_Login" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Cucumber Java.Feature: _01_Login" />
         <item itemvalue="Application.Test" />
@@ -121,7 +108,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662137705158</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Framework Create">
+      <created>1662140717145</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662140717145</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,7 +129,6 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
                       </list>
                     </value>
                   </entry>
