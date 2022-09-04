@@ -45,8 +45,15 @@ public class LeftNav extends Parent {
     @FindBy (xpath = "//span[text()='Question Bank']")
     private WebElement questionBankMenu;
 
-    WebElement myElement;
+    @FindBy (xpath = "//fa-icon//following::span[text()='Parameters']")
+    private WebElement parametersSubMenu;
 
+    @FindBy (xpath = "//a[@href=\"/entity-fields/list\"]")
+    private WebElement fieldsFunction;
+
+
+
+    WebElement myElement;
 
     public void findAndClick(String strElement){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
@@ -62,6 +69,8 @@ public class LeftNav extends Parent {
             case "videoConferenceMenu" : myElement =videoConferenceMenu; break;
             case "surveysMenu" : myElement =surveysMenu; break;
             case "questionBankMenu" : myElement =questionBankMenu; break;
+            case "parametersSubMenu" : myElement =parametersSubMenu; break;
+            case "fieldsFunction" : myElement =fieldsFunction; break;
         }
 
         clickFunction(myElement);
