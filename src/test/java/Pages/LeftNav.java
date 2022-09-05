@@ -51,6 +51,15 @@ public class LeftNav extends Parent {
     @FindBy (xpath = "//span[text()='Position Categories']")
     private WebElement positionCategories;
 
+    //PG16-6 Locators added.
+
+    @FindBy(xpath = "(//span[text()='Setup'])[4]")
+    private WebElement setupFour;
+
+    @FindBy(xpath = "//*[text()='Subject Categories']")
+    private WebElement subjectCategories;
+
+
     WebElement myElement;
 
 
@@ -70,6 +79,8 @@ public class LeftNav extends Parent {
             case "questionBankMenu" : myElement =questionBankMenu; break;
             case "humanResourcesSetup" : myElement =humanResourcesSetup; break;
             case "positionCategories" : myElement =positionCategories; break;
+            case "setupFour"         : myElement=setupFour; break;
+            case "subjectCategories" : myElement=subjectCategories; break;
         }
 
         clickFunction(myElement);
