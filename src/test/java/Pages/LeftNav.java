@@ -13,7 +13,6 @@ public class LeftNav extends Parent {
     }
 
 
-    // ilk sayfanın ana seçenekleri
 
     @FindBy (xpath = "//span[text()='Setup']")
     private WebElement setupOneMenu;
@@ -57,13 +56,29 @@ public class LeftNav extends Parent {
     @FindBy (xpath = "//span[text()='Position Categories']")
     private WebElement positionCategories;
 
-    //PG16-6 Locators added.
 
     @FindBy(xpath = "(//span[text()='Setup'])[4]")
     private WebElement setupFour;
 
     @FindBy(xpath = "//*[text()='Subject Categories']")
     private WebElement subjectCategories;
+
+    @FindBy(xpath = "//fa-icon//following::span[text()='School Setup']")
+    private WebElement schoolSetupMenu;
+
+    @FindBy(xpath = "//fa-icon//following::span[text()='Departments']")
+    private WebElement departmentsMenu;
+
+    @FindBy(xpath = "//div//following::span[text()='Section']")
+    private WebElement sectionMenu;
+
+
+
+
+
+
+
+
 
     WebElement myElement;
 
@@ -87,6 +102,10 @@ public class LeftNav extends Parent {
             case "positionCategories" : myElement =positionCategories; break;
             case "setupFour"         : myElement=setupFour; break;
             case "subjectCategories" : myElement=subjectCategories; break;
+            case "schoolSetupMenu" : myElement=schoolSetupMenu; break;
+            case "departmentsMenu" : myElement=departmentsMenu; break;
+            case "sectionMenu" : myElement=sectionMenu; break;
+
 
         }
 
