@@ -7,7 +7,7 @@ Feature: Add-Edit-Delete Subject Categories Under Education Setup
 
   Scenario:Add Subject Categories
     Given Click on the element in the Left Navigation Panel
-      | education         |
+      | educationMenu         |
       | setupFour         |
       | subjectCategories |
 
