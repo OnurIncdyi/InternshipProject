@@ -4,12 +4,12 @@ Feature: PG16-4 Feature
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
-  Scenario Outline: Add Fields
     Given user goes to page with LeftNav Menu
       | setupOneMenu      |
       | parametersSubMenu |
       | fieldsFunction    |
+
+  Scenario Outline: Add Fields
 
     When user clicks to Dialog Content
       | fieldsAddBtn |
@@ -23,17 +23,15 @@ Feature: PG16-4 Feature
       | saveButton |
 
     Then success message should display
-      | successMessage | success |
+      | <Message> | <msgText> |
 
     Examples:
-      | nameInput | codeInput |
-      | sample1   | 1010      |
+      | nameInput | codeInput | Message        | msgText |
+      | sample1   | 9867      | successMessage | success |
+      | sample1   | 3321      | alreadyExist   | exist   |
+      | sample2   | 9867      | alreadyExist   | exist   |
 
   Scenario Outline: Edit Fields
-    Given user goes to page with LeftNav Menu
-      | setupOneMenu      |
-      | parametersSubMenu |
-      | fieldsFunction    |
 
     When user sends information to Dialog Content
       | inputSearch | <nameInput> |
@@ -49,18 +47,14 @@ Feature: PG16-4 Feature
       | saveButton |
 
     Then success message should display
-      | successMessage | success |
+      | <Message> | <msgText> |
 
     Examples:
-      | nameInput | editName |
-      | sample1   | edit1    |
+      | nameInput | editName   | Message        | msgText |
+      | sample1   | edit2      | successMessage | success |
+      | edit2     | denemePG16 | alreadyExist   | exist   |
 
   Scenario Outline: Delete Fields
-
-    Given user goes to page with LeftNav Menu
-      | setupOneMenu      |
-      | parametersSubMenu |
-      | fieldsFunction    |
 
     When user sends information to Dialog Content
       | inputSearch | <editName> |
@@ -75,4 +69,4 @@ Feature: PG16-4 Feature
 
     Examples:
       | editName |
-      | edit1    |
+      | edit2    |
