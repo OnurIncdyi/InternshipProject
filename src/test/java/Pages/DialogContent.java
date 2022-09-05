@@ -84,8 +84,6 @@ public class DialogContent extends Parent {
     private WebElement inputSearch;
 
 
-
-
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
