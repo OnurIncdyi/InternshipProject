@@ -22,8 +22,13 @@ Feature: Human Resources Setup
     And User Clicks on the element in the Dialog Content
       | editButton |
     And User sends key to the Dialog Content
+<<<<<<< HEAD
       | nameInput | sinanInceUpdated |
       | shortName | sInceUpdated     |
+=======
+      | nameInput | sinanInce2 |
+      | shortName | sInce2     |
+>>>>>>> d9e5936 (PG16_5.feature modified)
     And User Clicks on the element in the Dialog Content
       | saveButton |
     Then Success message displays
