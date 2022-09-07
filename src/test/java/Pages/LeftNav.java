@@ -102,6 +102,7 @@ public class LeftNav extends Parent {
             case "fieldsFunction" : myElement =fieldsFunction; break;
             case "humanResourcesSetup" : myElement =humanResourcesSetup; break;
             case "positionCategories" : myElement =positionCategories; break;
+            case "positions" : myElement =positions; break;
             case "setupFour"         : myElement=setupFour; break;
             case "subjectCategories" : myElement=subjectCategories; break;
             case "schoolSetupMenu" : myElement=schoolSetupMenu; break;
