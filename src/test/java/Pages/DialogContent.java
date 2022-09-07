@@ -77,6 +77,12 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-edit-button//button")
     private WebElement editButton;
 
+    @FindBy(xpath = "//ms-add-button[contains(@tooltip,'ADD')]//button")
+    private WebElement fieldsAddBtn;
+
+    @FindBy(xpath = "//ms-text-field[contains(@placeholder,\"NAME\")]//input")
+    private WebElement inputSearch;
+
 
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
@@ -91,6 +97,7 @@ public class DialogContent extends Parent {
             case "searchInput" : myElement =searchInput; break;
             case "integrationCode" : myElement =integrationCode; break;
             case "priorityCode" : myElement =priorityCode; break;
+            case "inputSearch" : myElement =inputSearch; break;
         }
 
         sendKeysFunction(myElement, value);
@@ -109,7 +116,7 @@ public class DialogContent extends Parent {
             case "deleteDialogBtn" : myElement =deleteDialogBtn; break;
             case "acceptCookies" : myElement =acceptCookies; break;
             case "editButton" : myElement =editButton; break;
-
+            case "fieldsAddBtn" : myElement =fieldsAddBtn; break;
         }
 
         clickFunction(myElement);
