@@ -93,6 +93,13 @@ public class DialogContent extends Parent {
     private WebElement priorityInput;
 
 
+
+
+
+
+
+
+
     WebElement myElement;
     public void findAndSend(String strElement, String value){  // 2.aşama
         // burda string isimden weblemente ulaşıcam
@@ -110,6 +117,8 @@ public class DialogContent extends Parent {
             case "integrationCodeInput": myElement=integrationCodeInput; break;
             case "descriptionInput": myElement=descriptionInput; break;
             case "priorityInput": myElement=priorityInput; break;
+
+
         }
 
         sendKeysFunction(myElement, value);
@@ -129,6 +138,7 @@ public class DialogContent extends Parent {
             case "acceptCookies" : myElement =acceptCookies; break;
             case "editButton" : myElement =editButton; break;
             case "fieldsAddBtn" : myElement =fieldsAddBtn; break;
+
         }
 
         clickFunction(myElement);
