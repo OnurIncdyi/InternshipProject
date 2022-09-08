@@ -82,6 +82,22 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath = "//ms-text-field[contains(@placeholder,\"NAME\")]//input")
     private WebElement inputSearch;
+    //PG16-11 Locators
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
+    private WebElement integrationCodeInput;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='description']//input")
+    private WebElement descriptionInput;
+
+    @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
+    private WebElement priorityInput;
+
+
+
+
+
+
+
 
 
     WebElement myElement;
@@ -98,6 +114,11 @@ public class DialogContent extends Parent {
             case "integrationCode" : myElement =integrationCode; break;
             case "priorityCode" : myElement =priorityCode; break;
             case "inputSearch" : myElement =inputSearch; break;
+            case "integrationCodeInput": myElement=integrationCodeInput; break;
+            case "descriptionInput": myElement=descriptionInput; break;
+            case "priorityInput": myElement=priorityInput; break;
+
+
         }
 
         sendKeysFunction(myElement, value);
@@ -117,6 +138,7 @@ public class DialogContent extends Parent {
             case "acceptCookies" : myElement =acceptCookies; break;
             case "editButton" : myElement =editButton; break;
             case "fieldsAddBtn" : myElement =fieldsAddBtn; break;
+
         }
 
         clickFunction(myElement);
