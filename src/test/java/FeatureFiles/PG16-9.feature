@@ -8,7 +8,7 @@ Feature: PG16-4 Feature
       | setupOneMenu      |
       | parametersSubMenu |
       | bankAccFunction   |
-
+  @Regression
   Scenario Outline: Add Bank Account
 
     And wait
@@ -33,7 +33,7 @@ Feature: PG16-4 Feature
       | nameInput | inputIban                   | bankAccCode | Message        | msgText |
       | deneme1   | DD53 4343 4456 5656 5666 00 | 6767        | successMessage | success |
       | deneme2   | DD53 4343 4456 5656 5666 00 | 6767        | alreadyExist   | exist   |
-
+  @Regression
   Scenario Outline: Edit Bank Account
 
     When user sends information to Dialog Content
@@ -60,7 +60,7 @@ Feature: PG16-4 Feature
       | nameInput | editIban                    | Message        | msgText |
       | deneme1   | DD53 4343 4456 5656 5666 11 | successMessage | success |
       | deneme1   | DD53 4343 4456 5656 0000 00 | alreadyExist   | exist   |
-
+  @Regression
   Scenario Outline: Delete Bank Account
 
     When user sends information to Dialog Content
