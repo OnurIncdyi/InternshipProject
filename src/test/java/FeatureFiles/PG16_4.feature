@@ -8,7 +8,7 @@ Feature: PG16-4 Feature
       | setupOneMenu      |
       | parametersSubMenu |
       | fieldsFunction    |
-
+  @Regression
   Scenario Outline: Add Fields
 
     When user clicks to Dialog Content
@@ -30,7 +30,7 @@ Feature: PG16-4 Feature
       | sample1   | 9867      | successMessage | success |
       | sample1   | 3321      | alreadyExist   | exist   |
       | sample2   | 9867      | alreadyExist   | exist   |
-
+  @Regression
   Scenario Outline: Edit Fields
 
     When user sends information to Dialog Content
@@ -53,7 +53,7 @@ Feature: PG16-4 Feature
       | nameInput | editName   | Message        | msgText |
       | sample1   | edit2      | successMessage | success |
       | edit2     | denemePG16 | alreadyExist   | exist   |
-
+  @Regression
   Scenario Outline: Delete Fields
 
     When user sends information to Dialog Content
