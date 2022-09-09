@@ -92,11 +92,15 @@ public class DialogContent extends Parent {
     @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
     private WebElement priorityInput;
 
+    @FindBy(xpath = "//*[@formcontrolname='attachmentStages']")
+    private WebElement stageInput;
+
+    @FindBy(xpath = "//*[text()=' Student Registration ']")
+    private WebElement studentRegistration;
 
 
-
-
-
+     @FindBy(css = "[formcontrolname='description']")
+     private WebElement description;
 
 
 
@@ -117,6 +121,7 @@ public class DialogContent extends Parent {
             case "integrationCodeInput": myElement=integrationCodeInput; break;
             case "descriptionInput": myElement=descriptionInput; break;
             case "priorityInput": myElement=priorityInput; break;
+            case "description": myElement=description; break;
 
 
         }
@@ -138,6 +143,9 @@ public class DialogContent extends Parent {
             case "acceptCookies" : myElement =acceptCookies; break;
             case "editButton" : myElement =editButton; break;
             case "fieldsAddBtn" : myElement =fieldsAddBtn; break;
+            case "stageInput" :myElement=stageInput; break;
+            case "studentRegistration" :myElement=studentRegistration; break;
+
 
         }
 
@@ -170,4 +178,7 @@ public class DialogContent extends Parent {
 
 }
 
+    /*@FindBy(xpath = "//*[@class='cdk-global-overlay-wrapper']/div")
+    private WebElement bosluk;
 
+    case "bosluk" :myElement=bosluk; break;*/

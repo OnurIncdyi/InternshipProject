@@ -77,11 +77,8 @@ public class LeftNav extends Parent {
     @FindBy(xpath = "//div//following::span[text()='Section']")
     private WebElement sectionMenu;
 
-
-
-
-
-
+    @FindBy(xpath = "//*[text()='Document Types']")
+    private WebElement documentTypes;
 
 
 
@@ -112,7 +109,7 @@ public class LeftNav extends Parent {
             case "schoolSetupMenu" : myElement=schoolSetupMenu; break;
             case "departmentsMenu" : myElement=departmentsMenu; break;
             case "sectionMenu" : myElement=sectionMenu; break;
-
+            case "documentTypes" : myElement=documentTypes; break;
 
         }
 
