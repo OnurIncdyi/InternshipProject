@@ -29,6 +29,7 @@ public class PG16_1 {
 
         for (int i = 0; i < listElement.size(); i++) {
             dialogContent.findAndClick(listElement.get(i));
+
         }
     }
 
@@ -48,3 +49,4 @@ public class PG16_1 {
     }
 }
 
+//ExtendReportSet.xml
