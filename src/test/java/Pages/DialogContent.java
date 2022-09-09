@@ -102,6 +102,18 @@ public class DialogContent extends Parent {
      @FindBy(css = "[formcontrolname='description']")
      private WebElement description;
 
+     @FindBy(xpath = "//ms-masked-text-field[@formcontrolname='iban']//input")
+     private WebElement inputIban;
+
+     @FindBy(xpath = "(//mat-select[@role=\"combobox\"])[3]")
+     private WebElement currencyBox;
+
+     @FindBy(xpath = "(//mat-option[@role=\"option\"])[4]")
+     private WebElement currencyTRY;
+
+     @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
+     private WebElement bankAccCode;
+
 
 
     WebElement myElement;
@@ -122,6 +134,8 @@ public class DialogContent extends Parent {
             case "descriptionInput": myElement=descriptionInput; break;
             case "priorityInput": myElement=priorityInput; break;
             case "description": myElement=description; break;
+            case "inputIban": myElement=inputIban; break;
+            case "bankAccCode": myElement=bankAccCode; break;
 
 
         }
@@ -145,6 +159,8 @@ public class DialogContent extends Parent {
             case "fieldsAddBtn" : myElement =fieldsAddBtn; break;
             case "stageInput" :myElement=stageInput; break;
             case "studentRegistration" :myElement=studentRegistration; break;
+            case "currencyBox" :myElement=currencyBox; break;
+            case "currencyTRY" :myElement=currencyTRY; break;
 
 
         }
