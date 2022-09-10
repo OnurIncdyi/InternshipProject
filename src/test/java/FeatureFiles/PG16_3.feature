@@ -8,7 +8,7 @@ Feature: Parameters
       | parametersSubMenu |
       | documentTypes     |
 
-
+  @Regression
   Scenario: Add Document Types
     And Click on the element in the Dialog Content
       | addButton     |
@@ -23,7 +23,7 @@ Feature: Parameters
     And Click on the element in the Dialog Content
       | saveButton |
     Then Success message should be displayed
-
+  @Regression
   Scenario: Edit Document Types
     And Click on the element in the Dialog Content
       | editButton    |
@@ -35,7 +35,7 @@ Feature: Parameters
       | saveButton          |
     Then Success message should be displayed
 #   //TODO
-
+  @Regression
   Scenario: Delete Document Types
     And Click on the element in the Dialog Content
       | acceptCookies   |
