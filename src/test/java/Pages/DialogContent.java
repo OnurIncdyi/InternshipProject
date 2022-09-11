@@ -102,6 +102,10 @@ public class DialogContent extends Parent {
      @FindBy(css = "[formcontrolname='description']")
      private WebElement description;
 
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='order']//input")
+    private WebElement orderInput;
+
+
 
 
     WebElement myElement;
@@ -122,6 +126,7 @@ public class DialogContent extends Parent {
             case "descriptionInput": myElement=descriptionInput; break;
             case "priorityInput": myElement=priorityInput; break;
             case "description": myElement=description; break;
+            case "orderInput": myElement=orderInput; break;
 
 
         }

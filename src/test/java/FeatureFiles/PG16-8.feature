@@ -72,6 +72,14 @@ Feature: PG16-8 Feature
 
     Then Success message should be displayed
 
+  Scenario: Delete Departments
+
+    And user clicks to Dialog Content
+      | deleteButton    |
+      | deleteDialogBtn |
+
+    Then Success message should be displayed
+
 
 
 
