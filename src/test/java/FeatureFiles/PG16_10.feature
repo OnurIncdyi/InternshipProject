@@ -9,6 +9,7 @@ Feature: PG16_10 Feature
       | parametersSubMenu |
       | gradeLevels       |
 
+  @Regression
   Scenario Outline: Add Grade Level
 
     When user clicks to Dialog Content
@@ -26,8 +27,9 @@ Feature: PG16_10 Feature
 
     Examples:
       | nameInput | shortName | orderInput |
-      | test0447   | test0438   | 1          |
+      | test0447  | test0438  | 1          |
 
+  @Regression
   Scenario Outline: Edit Departments
 
     When user clicks to Dialog Content
@@ -46,8 +48,9 @@ Feature: PG16_10 Feature
 
     Examples:
       | nameInput | shortName |
-      | test4408   | test4574   |
+      | test4408  | test4574  |
 
+  @Regression
   Scenario: Delete Departments
 
     And user clicks to Dialog Content

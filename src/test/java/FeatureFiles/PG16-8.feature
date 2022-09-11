@@ -8,7 +8,7 @@ Feature: PG16-8 Feature
       | setupOneMenu    |
       | schoolSetupMenu |
       | departmentsMenu |
-
+  @Regression
   Scenario Outline: Add Departments
 
     When user clicks to Dialog Content
@@ -35,7 +35,7 @@ Feature: PG16-8 Feature
     Examples:
       | nameInput | codeInput | shortName |
       | test07    | test08    | test2     |
-
+  @Regression
   Scenario Outline: Edit Departments
 
     When user clicks to Dialog Content
@@ -63,7 +63,7 @@ Feature: PG16-8 Feature
     Examples:
       | nameInput | codeInput | shortName |
       | test08    | test09    | test5     |
-
+  @Regression
   Scenario: Delete Departments
 
     And user clicks to Dialog Content

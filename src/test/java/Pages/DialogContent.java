@@ -114,6 +114,9 @@ public class DialogContent extends Parent {
      @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
      private WebElement bankAccCode;
 
+    @FindBy(xpath = "//*[@formcontrolname='order']//input")
+    private WebElement orderInput;
+
 
 
     WebElement myElement;
@@ -136,6 +139,7 @@ public class DialogContent extends Parent {
             case "description": myElement=description; break;
             case "inputIban": myElement=inputIban; break;
             case "bankAccCode": myElement=bankAccCode; break;
+            case "orderInput": myElement=orderInput; break;
 
 
         }
