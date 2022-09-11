@@ -45,7 +45,7 @@ public class PG16_1 {
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
 
-        dialogContent.findAndContainsText("successMessage", "successfully");
+        dialogContent.findAndContainsText("successMessage","successfully");
     }
 }
 
