@@ -80,11 +80,7 @@ public class LeftNav extends Parent {
     @FindBy(xpath = "//*[text()='Document Types']")
     private WebElement documentTypes;
 
-    @FindBy (xpath = "//a[@href=\"/bank-account/list\"]")
-    private WebElement bankAccFunction;
 
-    @FindBy (xpath = "(//span[text()='Grade Levels'])[1]")
-    private WebElement gradeLevels;
 
     WebElement myElement;
 
@@ -114,8 +110,6 @@ public class LeftNav extends Parent {
             case "departmentsMenu" : myElement=departmentsMenu; break;
             case "sectionMenu" : myElement=sectionMenu; break;
             case "documentTypes" : myElement=documentTypes; break;
-            case "bankAccFunction" : myElement=bankAccFunction; break;
-            case "gradeLevels" : myElement=gradeLevels; break;
 
         }
 
