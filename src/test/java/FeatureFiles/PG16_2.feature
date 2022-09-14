@@ -8,7 +8,7 @@ Feature: PG16-2 Feature
       | humanResourcesMenu  |
       | humResourcesSetup1  |
       | attestations        |
-
+@Regression
   Scenario: Add Attestation Categories
     And Click on the element in the Dialog Content
       | addButton |
@@ -17,7 +17,7 @@ Feature: PG16-2 Feature
     And Click on the element in the Dialog Content
       | saveButton |
     Then Success message should be displayed
-
+  @Regression
   Scenario: Edit Attestation Categories
     And Click on the element in the Dialog Content
       | editButton |
@@ -26,7 +26,7 @@ Feature: PG16-2 Feature
     And Click on the element in the Dialog Content
       | saveButton |
     Then Success message should be displayed
-
+  @Regression
   Scenario: Delete Attestation Categories
     And Click on the element in the Dialog Content
       | deleteButton    |
