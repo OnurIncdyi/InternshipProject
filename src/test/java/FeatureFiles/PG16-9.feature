@@ -7,41 +7,48 @@ Feature: PG16-4 Feature
     Given user goes to page with LeftNav Menu
       | setupOneMenu      |
       | parametersSubMenu |
-      | fieldsFunction    |
+      | bankAccFunction   |
   @Regression
-  Scenario Outline: Add Fields
+  Scenario Outline: Add Bank Account
+
+    And wait
 
     When user clicks to Dialog Content
       | fieldsAddBtn |
 
     And user sends information to Dialog Content
-      | nameInput | <nameInput> |
-      | codeInput | <codeInput> |
-
+      | nameInput   | <nameInput>   |
+      | inputIban   | <inputIban>   |
+      | bankAccCode | <bankAccCode> |
 
     When user clicks to Dialog Content
-      | saveButton |
+      | currencyBox |
+      | currencyTRY |
+      | saveButton  |
 
     Then success message should display
       | <Message> | <msgText> |
 
     Examples:
-      | nameInput | codeInput | Message        | msgText |
-      | sample1   | 9867      | successMessage | success |
-      | sample1   | 3321      | alreadyExist   | exist   |
-      | sample2   | 9867      | alreadyExist   | exist   |
+      | nameInput | inputIban                   | bankAccCode | Message        | msgText |
+      | deneme1   | DD53 4343 4456 5656 5666 00 | 6767        | successMessage | success |
+      | deneme2   | DD53 4343 4456 5656 5666 00 | 6767        | alreadyExist   | exist   |
   @Regression
-  Scenario Outline: Edit Fields
+  Scenario Outline: Edit Bank Account
 
     When user sends information to Dialog Content
       | inputSearch | <nameInput> |
 
     And user clicks to Dialog Content
       | searchButton |
-      | editButton   |
+
+    And wait
+
+    And user clicks to Dialog Content
+      | editButton |
 
     And user sends information to Dialog Content
-      | nameInput | <editName> |
+      | inputIban | <editIban> |
 
     And user clicks to Dialog Content
       | saveButton |
@@ -50,14 +57,14 @@ Feature: PG16-4 Feature
       | <Message> | <msgText> |
 
     Examples:
-      | nameInput | editName   | Message        | msgText |
-      | sample1   | edit2      | successMessage | success |
-      | edit2     | denemePG16 | alreadyExist   | exist   |
+      | nameInput | editIban                    | Message        | msgText |
+      | deneme1   | DD53 4343 4456 5656 5666 11 | successMessage | success |
+      | deneme1   | DD53 4343 4456 5656 0000 00 | alreadyExist   | exist   |
   @Regression
-  Scenario Outline: Delete Fields
+  Scenario Outline: Delete Bank Account
 
     When user sends information to Dialog Content
-      | inputSearch | <editName> |
+      | inputSearch | <nameInput> |
 
     And user clicks to Dialog Content
       | searchButton    |
@@ -68,5 +75,5 @@ Feature: PG16-4 Feature
       | successMessage | success |
 
     Examples:
-      | editName |
-      | edit2    |
+      | nameInput |
+      | deneme1   |
