@@ -198,7 +198,3 @@ public class DialogContent extends Parent {
 
 }
 
-    /*@FindBy(xpath = "//*[@class='cdk-global-overlay-wrapper']/div")
-    private WebElement bosluk;
-
-    case "bosluk" :myElement=bosluk; break;*/
