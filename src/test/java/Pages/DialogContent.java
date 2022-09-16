@@ -82,12 +82,40 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath = "//ms-text-field[contains(@placeholder,\"NAME\")]//input")
     private WebElement inputSearch;
+    //PG16-11 Locators
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
+    private WebElement integrationCodeInput;
+
+    @FindBy(xpath = "//ms-text-field[@formcontrolname='description']//input")
+    private WebElement descriptionInput;
+
+    @FindBy(xpath = "//ms-integer-field[@formcontrolname='priority']//input")
+    private WebElement priorityInput;
+
+    @FindBy(xpath = "//*[@formcontrolname='attachmentStages']")
+    private WebElement stageInput;
+
+    @FindBy(xpath = "//*[text()=' Student Registration ']")
+    private WebElement studentRegistration;
 
 
+     @FindBy(css = "[formcontrolname='description']")
+     private WebElement description;
 
+     @FindBy(xpath = "//ms-masked-text-field[@formcontrolname='iban']//input")
+     private WebElement inputIban;
 
+     @FindBy(xpath = "(//mat-select[@role=\"combobox\"])[3]")
+     private WebElement currencyBox;
 
+     @FindBy(xpath = "(//mat-option[@role=\"option\"])[4]")
+     private WebElement currencyTRY;
 
+     @FindBy(xpath = "//ms-text-field[@formcontrolname='integrationCode']//input")
+     private WebElement bankAccCode;
+
+    @FindBy(xpath = "//*[@formcontrolname='order']//input")
+    private WebElement orderInput;
 
 
 
@@ -105,6 +133,14 @@ public class DialogContent extends Parent {
             case "integrationCode" : myElement =integrationCode; break;
             case "priorityCode" : myElement =priorityCode; break;
             case "inputSearch" : myElement =inputSearch; break;
+            case "integrationCodeInput": myElement=integrationCodeInput; break;
+            case "descriptionInput": myElement=descriptionInput; break;
+            case "priorityInput": myElement=priorityInput; break;
+            case "description": myElement=description; break;
+            case "inputIban": myElement=inputIban; break;
+            case "bankAccCode": myElement=bankAccCode; break;
+            case "orderInput": myElement=orderInput; break;
+
 
         }
 
@@ -125,6 +161,11 @@ public class DialogContent extends Parent {
             case "acceptCookies" : myElement =acceptCookies; break;
             case "editButton" : myElement =editButton; break;
             case "fieldsAddBtn" : myElement =fieldsAddBtn; break;
+            case "stageInput" :myElement=stageInput; break;
+            case "studentRegistration" :myElement=studentRegistration; break;
+            case "currencyBox" :myElement=currencyBox; break;
+            case "currencyTRY" :myElement=currencyTRY; break;
+
 
         }
 
@@ -156,5 +197,4 @@ public class DialogContent extends Parent {
 
 
 }
-
 

@@ -64,6 +64,9 @@ public class LeftNav extends Parent {
 
     @FindBy(xpath = "//*[text()='Subject Categories']")
     private WebElement subjectCategories;
+    //PG16-11 Locators added
+    @FindBy(xpath="(//span[text()='Discounts'])[1]")
+    private WebElement discounts;
 
     @FindBy(xpath = "//fa-icon//following::span[text()='School Setup']")
     private WebElement schoolSetupMenu;
@@ -74,11 +77,17 @@ public class LeftNav extends Parent {
     @FindBy(xpath = "//div//following::span[text()='Section']")
     private WebElement sectionMenu;
 
+    @FindBy(xpath = "//*[text()='Document Types']")
+    private WebElement documentTypes;
 
+    @FindBy(xpath = "//span[@class='nav-link-title ng-tns-c249-18 ng-star-inserted']")
+    private WebElement humResourcesSetup1;
 
+    @FindBy(xpath = "//*[text()='Attestations']")
+    private WebElement attestations ;
 
-
-
+    @FindBy(xpath = "//*[text()='Nationalities']")
+    private WebElement nationalities;
 
 
 
@@ -105,9 +114,14 @@ public class LeftNav extends Parent {
             case "positions" : myElement =positions; break;
             case "setupFour"         : myElement=setupFour; break;
             case "subjectCategories" : myElement=subjectCategories; break;
+            case "discounts"        : myElement=discounts; break;
             case "schoolSetupMenu" : myElement=schoolSetupMenu; break;
             case "departmentsMenu" : myElement=departmentsMenu; break;
             case "sectionMenu" : myElement=sectionMenu; break;
+            case "documentTypes" : myElement=documentTypes; break;
+            case "attestations" : myElement=attestations; break;
+            case "humResourcesSetup1" : myElement=humResourcesSetup1; break;
+            case "nationalities" : myElement=nationalities; break;
 
 
         }

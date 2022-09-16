@@ -1,4 +1,4 @@
-Feature: Parameters
+Feature: Nationalities
 
   Background:
     Given Navigate to basqar
@@ -6,41 +6,36 @@ Feature: Parameters
     And Click on the element in the Left Navigation
       | setupOneMenu      |
       | parametersSubMenu |
-      | documentTypes     |
+      | nationalities     |
 
   @Regression
-  Scenario: Add Document Types
+  Scenario: Add Nationalities
     And Click on the element in the Dialog Content
-      | addButton     |
       | acceptCookies |
+      | addButton     |
+
     And User sending the key in Dialog Content
-      | nameInput   | artemisNasa |
-      | description | Nasa        |
-    And Click on the element in the Dialog Content
-      | stageInput          |
-      | studentRegistration |
-    And Click on the tab
+      | nameInput | spacex |
     And Click on the element in the Dialog Content
       | saveButton |
     Then Success message should be displayed
+
   @Regression
-  Scenario: Edit Document Types
+  Scenario: Edit Nationalities
     And Click on the element in the Dialog Content
-      | editButton    |
       | acceptCookies |
+      | editButton    |
     And User sending the key in Dialog Content
-      | nameInput   | artemisNasa82 |
-      | description | Nasa          |
+      | nameInput | nasa |
     And Click on the element in the Dialog Content
-      | saveButton          |
+      | saveButton |
     Then Success message should be displayed
-#   //TODO
+
   @Regression
-  Scenario: Delete Document Types
+  Scenario: Delete Nationalities
     And Click on the element in the Dialog Content
       | acceptCookies   |
       | deleteButton    |
       | deleteDialogBtn |
     Then Success message should be displayed
-
 

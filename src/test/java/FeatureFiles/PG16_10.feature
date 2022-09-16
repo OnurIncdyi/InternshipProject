@@ -1,31 +1,24 @@
-Feature: PG16-8 Feature
+Feature: PG16_10 Feature
 
   Background:
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
     Given user goes to page with LeftNav Menu
-      | setupOneMenu    |
-      | schoolSetupMenu |
-      | departmentsMenu |
+      | setupOneMenu      |
+      | parametersSubMenu |
+      | gradeLevels       |
+
   @Regression
-  Scenario Outline: Add Departments
+  Scenario Outline: Add Grade Level
 
     When user clicks to Dialog Content
       | addButton |
 
     And user sends information to Dialog Content
-      | nameInput | <nameInput> |
-      | codeInput | <codeInput> |
-
-    When user goes to page with LeftNav Menu
-      | sectionMenu |
-
-    And wait
-
-    And user sends information to Dialog Content
-      | nameInput      | <nameInput> |
-      | shortNameInput | <shortName> |
+      | nameInput  | <nameInput>  |
+      | shortName  | <shortName>  |
+      | orderInput | <orderInput> |
 
     When user clicks to Dialog Content
       | saveButton |
@@ -33,8 +26,9 @@ Feature: PG16-8 Feature
     Then Success message should be displayed
 
     Examples:
-      | nameInput | codeInput | shortName |
-      | test07    | test08    | test2     |
+      | nameInput | shortName | orderInput |
+      | test0447  | test0438  | 1          |
+
   @Regression
   Scenario Outline: Edit Departments
 
@@ -43,16 +37,8 @@ Feature: PG16-8 Feature
 
     And user sends information to Dialog Content
       | nameInput | <nameInput> |
-      | codeInput | <codeInput> |
+      | shortName | <shortName> |
 
-    When user goes to page with LeftNav Menu
-      | sectionMenu |
-
-    And wait
-
-    And user sends information to Dialog Content
-      | nameInput      | <nameInput> |
-      | shortNameInput | <shortName> |
 
     When user clicks to Dialog Content
       | saveButton |
@@ -61,8 +47,9 @@ Feature: PG16-8 Feature
     Then Success message should be displayed
 
     Examples:
-      | nameInput | codeInput | shortName |
-      | test08    | test09    | test5     |
+      | nameInput | shortName |
+      | test4408  | test4574  |
+
   @Regression
   Scenario: Delete Departments
 
@@ -71,7 +58,3 @@ Feature: PG16-8 Feature
       | deleteDialogBtn |
 
     Then Success message should be displayed
-
-
-
-
