@@ -8,6 +8,7 @@ Feature: Human Resources Setup
       | humanResourcesSetup |
       | positions           |
 
+  @Regression
   Scenario: Add Positions
     And User Clicks on the element in the Dialog Content
       | addButton |
@@ -18,6 +19,7 @@ Feature: Human Resources Setup
       | saveButton |
     Then Success message displays
 
+  @Regression
   Scenario: Edit Positions
     And User Clicks on the element in the Dialog Content
       | editButton |
@@ -28,6 +30,7 @@ Feature: Human Resources Setup
       | saveButton |
     Then Success message displays
 
+  @Regression
   Scenario: Delete Positions
     And User Clicks on the element in the Dialog Content
       | deleteButton    |
