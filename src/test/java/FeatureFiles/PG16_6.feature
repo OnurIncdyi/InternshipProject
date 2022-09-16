@@ -4,7 +4,7 @@ Feature: Add-Edit-Delete Subject Categories Under Education Setup
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
+  @Regression
   Scenario:Add Subject Categories
     Given Click on the element in the Left Navigation Panel
       | educationMenu         |
@@ -22,7 +22,7 @@ Feature: Add-Edit-Delete Subject Categories Under Education Setup
       | saveButton |
 
     Then Success message should be displayed
-
+  @Regression
   Scenario: Edit Subject Categories
     Given Click on the element in the Left Navigation Panel
       | educationMenu     |
@@ -43,7 +43,7 @@ Feature: Add-Edit-Delete Subject Categories Under Education Setup
       | saveButton |
 
     Then Success message should be displayed
-
+  @Regression
   Scenario: Delete Subject Categories
     Given Click on the element in the Left Navigation Panel
       | educationMenu     |
