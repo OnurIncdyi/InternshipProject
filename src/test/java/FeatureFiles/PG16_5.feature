@@ -12,8 +12,8 @@ Feature: Human Resources Setup
     And User Clicks on the element in the Dialog Content
       | addButton |
     And User sends key to the Dialog Content
-      | nameInput | sinanInce |
-      | shortName | sInce     |
+      | nameInput | technicalManager |
+      | shortName | TM               |
     And User Clicks on the element in the Dialog Content
       | saveButton |
     Then Success message displays
