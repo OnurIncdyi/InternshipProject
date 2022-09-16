@@ -4,7 +4,7 @@ Feature: Add-Edit-Delete Discounts under Parameters Setup
     Given Navigate to basqar
     When Enter username and password and click login button
     Then User should login successfuly
-
+  @Regression
   Scenario: Add Discounts
     Given Click on the element in the Left Navigation Panel
       | setupOneMenu      |
@@ -23,7 +23,7 @@ Feature: Add-Edit-Delete Discounts under Parameters Setup
       | saveButton |
 
     Then Success message should be displayed
-
+  @Regression
   Scenario: Edit Discounts
     Given Click on the element in the Left Navigation Panel
       | setupOneMenu      |
@@ -44,7 +44,7 @@ Feature: Add-Edit-Delete Discounts under Parameters Setup
       | saveButton |
 
     Then Success message should be displayed
-
+  @Regression
   Scenario: Delete Discounts
     Given Click on the element in the Left Navigation Panel
       | setupOneMenu      |
