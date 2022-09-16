@@ -1,6 +1,7 @@
 package Runners;
 
 
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
@@ -9,5 +10,5 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"StepDefinitions"},
         plugin= {"pretty","html:target/site/cucumber-pretty","json:target/cucumber/cucumber.json"}
 )
-public class PG16_10_TestRunner {
+public class PG16_10_TestRunner extends AbstractTestNGCucumberTests {
 }

@@ -27,7 +27,7 @@ Feature: PG16_10 Feature
 
     Examples:
       | nameInput | shortName | orderInput |
-      | test0447  | test0438  | 1          |
+      | test0447  | test04338 | 2          |
 
   @Regression
   Scenario Outline: Edit Departments
@@ -48,7 +48,7 @@ Feature: PG16_10 Feature
 
     Examples:
       | nameInput | shortName |
-      | test4408  | test4574  |
+      | test4408  | test42574 |
 
   @Regression
   Scenario: Delete Departments
